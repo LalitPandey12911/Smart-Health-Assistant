@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About the Developer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <style>
+    .about-container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .about-container h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .about-container p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .about-container a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .about-container a:hover {
+      color: #0056b3;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      border-radius: 6px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #0056b3;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="about-container">
+    <h1>Meet the Developer 👋</h1>
+    <p>Hi, I’m <strong>Lalit Pandey</strong> — a final-year B.Tech IT student at <strong>Maharaja Surajmal Institute of Technology, Delhi</strong>.</p>
+    <p>I’m passionate about creating impactful, user-friendly tech solutions. This Smart Health Assistant is a result of my continuous exploration in <strong>AI/ML and full-stack development</strong>.</p>
+    <p>As a final-year tech enthusiast, I’m constantly exploring AI and ML to build smarter, human-focused applications. I enjoy solving problems, building beautiful interfaces, and learning something new every day.</p>
+    
+    <a class="back-btn" href="/">← Back to Home</a>
+  </div>
+</body>
+</html>

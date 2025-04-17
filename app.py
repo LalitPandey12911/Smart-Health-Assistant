@@ -234,6 +234,11 @@ def contact():
 def privacy_policy():
     return render_template('privacy-policy.html')
 
+@app.route('/developer')
+def developer():
+    return render_template('developer.html')
+
+
 if __name__ == '__main__':
     import os
     port = int(os.environ.get('PORT', 5000))  
